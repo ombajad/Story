@@ -1,0 +1,20 @@
+5.Run the following commands :
+- mkdir hello-docker
+- cd hello-docker
+- code 
+
+
+7.Inside app.js file type the code:
+console.log("Hello docker");
+
+Inside Dockerfile type the code :
+FROM node:alpine
+COPY . /app
+WORKDIR /app
+CMD node app.js
+
+9.In the command prompt type the command :
+docker build -t hello-docker .
+
+10.Then type the command :
+docker image ls
